@@ -1,8 +1,8 @@
 // imports
-import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from "react";
 import React from "react";
+import EmployeeTable from "./components/employees"
 
 function App() {
   // setting up a stateful employees array 
@@ -10,7 +10,7 @@ function App() {
   // useEffect to replace componentDidMount
   useEffect(() => {
     fetch("https://randomuser.me/api/?results=40")
-    .then((response) => response.json)
+    .then((response) => response.json())
     .then((data) => {
       setEmployees(data.results)
     })
@@ -21,6 +21,7 @@ function App() {
       <header className="App-header">
       Employee Directory
       </header>
+      <EmployeeTable />
     </div>
   );
 }
