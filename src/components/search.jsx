@@ -5,7 +5,7 @@ function Search(props){
         <>
         <div className="container">
             <form className="search">
-                <input type="text" />
+                <input type="text" style={{width:"50%", margin:"10px"}} placeholder="Search for an Employee" />
             </form>
         </div>
         </>
