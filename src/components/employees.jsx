@@ -1,3 +1,5 @@
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+
 function EmployeeTable(props){
     return(
         <>
@@ -6,7 +8,7 @@ function EmployeeTable(props){
             <tr>
                 <th>Photo</th>
                 <th>First Name</th>
-                <th>Last Name</th>
+                <th>Last Name <ArrowDropDownIcon onClick={props.handleSort}/></th>
                 <th>Phone Number</th>
                 <th>Email</th>
             </tr>
