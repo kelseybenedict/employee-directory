@@ -40,6 +40,7 @@ function App() {
     setEmpData(data);
   }
  // handle sorting by last name in descending order
+ // referenced w3schools ternary operator function for this method
   const handleSort = () => {
     let sortedData = employees.sort((a, b) => {
     return a.name.last > b.name.last ? -1 : 1;
