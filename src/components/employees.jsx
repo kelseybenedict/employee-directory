@@ -11,19 +11,18 @@ function EmployeeTable(props){
                 <th>Email</th>
             </tr>
             </thead>
-            
-            {props.setEmployees.map((each, index) => {
+            {props.empData.map((item, index) => {
                 return (
                 <tbody key={index}>
                     <tr>
                         <td>
-                            <img src={each.picture.thumbnail}
+                            <img src={item.picture.thumbnail}
                             alt={"Profile of employee"}/>
                         </td>
-                        <td>{each.name.first}</td>
-                        <td>{each.name.last}</td>
-                        <td>{each.email}</td>
-                        <td>{each.cell}</td>
+                        <td>{item.name.first}</td>
+                        <td>{item.name.last}</td>
+                        <td>{item.cell}</td>
+                        <td>{item.email}</td>
                     </tr>
                 </tbody>
                 )
