@@ -20,7 +20,7 @@ function App() {
       setEmpData(data.results);
     })
   }, [])
-
+  // prevent default for searching
   const handleSubmit = event => {
     event.preventDefault();
   };
@@ -39,7 +39,7 @@ function App() {
     // setting the state back to our data
     setEmpData(data);
   }
-
+ // handle sorting by last name in descending order
   const handleSort = () => {
     let sortedData = employees.sort((a, b) => {
     return a.name.last > b.name.last ? -1 : 1;
