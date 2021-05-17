@@ -11,11 +11,24 @@ function EmployeeTable(props){
                 <th>Email</th>
             </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                </tr>
-            </tbody>
+            
+            {props.setEmployees.map((each, index) => {
+                return (
+                <tbody key={index}>
+                    <tr>
+                        <td>
+                            <img src={each.picture.thumbnail}
+                            alt={"Profile of employee"}/>
+                        </td>
+                        <td>{each.name.first}</td>
+                        <td>{each.name.last}</td>
+                        <td>{each.email}</td>
+                        <td>{each.cell}</td>
+                    </tr>
+                </tbody>
+                )
+            })}
+            
         </table>
         </>
     )

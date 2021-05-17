@@ -18,15 +18,26 @@ function App() {
       setEmployees(data.results)
     })
   }, [])
+  const handleSubmit = event => {
+    event.preventDefault();
+  };
 
+  // handle searching/filtering by name 
+  const search = event => {
+
+  }
+  // handle sorting by last name 
   return (
     <>
     <div className="App">
       <header className="App-header">
       Employee Directory
       </header>
-      <Search />
-      <EmployeeTable />
+      <Search 
+      handleSubmit={handleSubmit}
+      search={search}/>
+      <EmployeeTable 
+      employees={employees}/>
     </div>
     </>
   );
