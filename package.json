@@ -16,11 +16,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-<<<<<<< HEAD
-    "deploy": "gh-pages -b main -d build",
-=======
     "deploy": "gh-pages -d build",
->>>>>>> restore
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -44,9 +40,5 @@
       "last 1 safari version"
     ]
   },
-<<<<<<< HEAD
-  "homepage": "https://github.com/kelseybenedict/employee-directory"
-=======
   "homepage": "https://kelseybenedict.github.io/employee-directory"
->>>>>>> restore
 }
